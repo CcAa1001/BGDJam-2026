@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dbpjyiosh8ot3"]
+
+[ext_resource type="Script" uid="uid://dpakg0rpb577g" path="res://Entities/Player/base.gd" id="1_ndu33"]
+[ext_resource type="Texture2D" uid="uid://bbbubj61ex26k" path="res://icon.svg" id="2_nrp6f"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tekja"]
+radius = 61.0
+height = 124.0
+
+[node name="Base" type="Area2D" unique_id=1743474749]
+script = ExtResource("1_ndu33")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1079375975]
+position = Vector2(-18.5, -138)
+scale = Vector2(0.6796875, 0.796875)
+texture = ExtResource("2_nrp6f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1494884554]
+position = Vector2(-20, -140)
+shape = SubResource("CapsuleShape2D_tekja")
